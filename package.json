@@ -1,0 +1,23 @@
+{
+  "name": "eic-pin-2024",
+  "version": "1.0.0",
+  "description": "Uma API de filmes apresentada no EIC2024",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "EIC2024",
+    "express",
+    "api-filmes"
+  ],
+  "author": "Luís Eduardo",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

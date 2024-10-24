@@ -1,0 +1,33 @@
+### GET todos os filmes
+GET http://localhost:3000/api/filmes
+Content-Type: application/json
+
+### GET filme por ID
+GET http://localhost:3000/api/filmes/1
+Content-Type: application/json
+
+### POST adicionar um novo filme
+POST http://localhost:3000/api/filmes
+Content-Type: application/json
+
+{
+	"id": 5,
+	"nome": "O Som ao Redor",
+	"ano": 2013,
+	"valor_ingresso": 3.45
+}
+
+### PUT atualizar filme existente
+PUT http://localhost:3000/api/filmes/5
+Content-Type: application/json
+
+{
+	"id": 5,
+	"nome": "O Som ao Redor",
+	"ano": 2013,
+	"valor_ingresso": 15.50
+}
+
+### DELETE remover um filme por ID
+DELETE http://localhost:3000/api/filmes/5
+Content-Type: application/json
