@@ -18,12 +18,10 @@ export async function adicionarFilmeModel(filme) {
 }
 
 export async function atualizarFilmeModel(filme) {
-  await db.run("UPDATE filmes SET nome = ?, ano = ?, valor_ingresso = ? WHERE id = ? ", [
-    filme.nome,
-    filme.ano,
-    filme.valor_ingresso,
-    filme.id,
-  ]);
+  await db.run(
+    "UPDATE filmes SET nome = ?, ano = ?, valor_ingresso = ? WHERE id = ? ",
+    [filme.nome, filme.ano, filme.valor_ingresso, filme.id]
+  );
 }
 
 export async function removerFilmeModel(id) {
